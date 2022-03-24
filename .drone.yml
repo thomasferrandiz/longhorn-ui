@@ -22,11 +22,11 @@ steps:
     custom_dns: 1.1.1.1
     dockerfile: Dockerfile
     password:
-      from_secret: docker_password_rancherlabs_dev
-    repo: rancherlabs/longhornonz-longhorn-ui
+      from_secret: docker_password_thomasferrandiz_dev
+    repo: thomasferrandiz/longhornonz-longhorn-ui
     tag: "${DRONE_TAG}-s390x"
     username:
-      from_secret: docker_username_rancherlabs_dev
+      from_secret: docker_username_thomasferrandiz_dev
   when:
     event:
     - tag
